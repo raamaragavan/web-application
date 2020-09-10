@@ -1,0 +1,6 @@
+<form class="form-inline row my-2 my-lg-0" [formGroup]="form" (ngSubmit)="onFilter()">
+    <input class="form-control mr-sm-2" formControlName="min" required type="number" placeholder="Min" aria-label="Search">
+    <input class="form-control mr-sm-2" formControlName="max" required type="number" placeholder="Max" aria-label="Search">
+    <button class="btn btn-success my-2" [disabled]="!form.valid" type="submit">Filter</button>
+    <button class="btn btn-secondary my-2"  type="button" style="margin-left: 10px;" (click)="onReset()">Reset</button>
+  </form>

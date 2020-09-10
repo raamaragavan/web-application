@@ -1,0 +1,52 @@
+[
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Shop 1"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Shop 2"
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Shop 3"
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "Shop 4"
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "Shop 5"
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "title": "Shop 6"
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "title": "Shop 7"
+    },
+    {
+      "userId": 1,
+      "id": 8,
+      "title": "Shop 8"
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "title": "Shop 9"
+    },
+    {
+        "userId": 1,
+        "id": 10,
+        "title": "Shop 10"
+      }
+]

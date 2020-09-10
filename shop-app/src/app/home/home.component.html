@@ -1,0 +1,33 @@
+
+<div class="row filter-bar">
+    <div class="col-md-1 col-lg-2"></div>
+  <app-filter class="col-12 col-sm-12 col-md-10 col-lg-8" (filter)="onFilterChanged($event)"></app-filter>
+  <div class="col-md-1 col-lg-2"></div>
+</div>
+
+<div class="row" *ngIf="furnitures.length && !loading">
+    
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 product-box"  *ngFor="let furniture of furnitures">
+        <div class="card" style="width: 100%;">
+            <div class="image-area">
+                <div class="status-label" >
+                    <span class="badge badge-pill badge-success" *ngIf="furniture.availability === 'Available'">{{furniture.availability}}</span>
+                    <span class="badge badge-pill badge-secondary" *ngIf="furniture.availability !== 'Available'">{{furniture.availability}}</span>
+                </div>
+                No Image
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{furniture.title}}  <a href="#"  *ngIf="furniture.availability === 'Available'" class="btn add-btn btn-sm btn-outline-success">Add</a></h5>
+                <p class="card-text">INR. {{furniture.price}} </p>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="row content-area" *ngIf="!furnitures.length && !loading">
+    <h4>No Results Found</h4>
+</div>
+<div class="row content-area" *ngIf="loading">
+    <h1>Loading</h1>
+</div>
+

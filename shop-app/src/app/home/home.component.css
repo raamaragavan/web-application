@@ -1,0 +1,48 @@
+.image-area{
+    background-color: #dedede;
+    color: #fff;
+    font-size: bold;
+    height: 200px;
+    position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    font-size: 1.25em;
+    text-align: center;
+    vertical-align: center;;
+}
+
+.content-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    width: 100%;
+}
+
+.add-btn {
+    text-align: right;
+    float:right;
+}
+
+.status-label{
+position: absolute;
+right: 0px;
+font-size: 0.75em;
+top: -5px;
+}
+
+.filter-bar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.plus-icon{
+    cursor: pointer;
+    float: right;
+}
+
+.product-box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

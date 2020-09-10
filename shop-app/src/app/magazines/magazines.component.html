@@ -1,0 +1,19 @@
+<div class="row" *ngIf="magazines.length && !loading">
+    <div class="col-6 col-sm-6 col-md-4 col-lg-3 list-box"  *ngFor="let magazine of magazines;">
+        <div class="card" style="width: 100%;">
+            <div class="image-area">
+                No Image
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{magazine.title}} </h5>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="row content-area" *ngIf="!magazines.length && !loading">
+    <h4>No Results Found</h4>
+</div>
+<div class="row content-area" *ngIf="loading">
+    <h1>Loading</h1>
+</div>
